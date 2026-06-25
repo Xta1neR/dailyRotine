@@ -1,0 +1,56 @@
+.scrollContainer {
+  display: flex;
+  gap: var(--spacing-md);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-sm);
+  /* Hide scrollbar for a cleaner look */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 140px;
+  background-color: var(--card-light-beige);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Make every even card slightly different to match the image's alternating feel */
+.card:nth-child(even) {
+  background-color: var(--card-white);
+  border: 1px solid var(--card-border);
+}
+
+.icon {
+  color: var(--accent-green);
+  margin-bottom: var(--spacing-md);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.2;
+}

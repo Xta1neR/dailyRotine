@@ -1,0 +1,58 @@
+.header {
+  padding-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--card-border);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hello {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.calendarBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dateSection {
+  margin-top: var(--spacing-sm);
+}
+
+.date {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,127 @@
+.card {
+  background-color: var(--card-dark);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  color: var(--card-dark-text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.taskItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 4px;
+  background-color: var(--card-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: all 0.2s;
+}
+
+.checkboxChecked {
+  background-color: var(--accent-blue);
+}
+
+.taskText {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  word-break: break-word;
+  transition: opacity 0.2s;
+}
+
+.completed .taskText {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.taskItem:hover .actions {
+  opacity: 1;
+}
+
+/* For mobile where hover isn't great, keep them slightly visible or show on active */
+@media (max-width: 768px) {
+  .actions {
+    opacity: 0.5;
+  }
+}
+
+.actionBtn {
+  color: var(--card-dark-text);
+  opacity: 0.6;
+}
+
+.actionBtn:hover {
+  opacity: 1;
+}
+
+.editInput {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--card-dark-text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.addForm {
+  display: flex;
+  align-items: center;
+  margin-top: var(--spacing-lg);
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-md);
+}
+
+.addInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--card-dark-text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.addInput::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.addBtn {
+  color: var(--card-dark-text);
+  opacity: 0.7;
+  padding: 4px;
+}
+
+.addBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.addBtn:not(:disabled):hover {
+  opacity: 1;
+}
