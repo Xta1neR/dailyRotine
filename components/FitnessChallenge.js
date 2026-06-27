@@ -3,10 +3,10 @@ import { Target, Check } from 'lucide-react';
 import styles from './FitnessChallenge.module.css';
 
 const defaultChallenges = [
-  { id: 'c1', text: '30 Push-ups' },
-  { id: 'c2', text: '30 Pull-ups' },
-  { id: 'c3', text: '30 Crunches' },
-  { id: 'c4', text: '50 Sit-ups' },
+  { id: 'c1', text: '10 Push-ups' },
+  { id: 'c2', text: '10 Pull-ups' },
+  { id: 'c3', text: '20 Crunches' },
+  { id: 'c4', text: '30 Sit-ups' },
   { id: 'c5', text: '50 Calf raises' },
   { id: 'c6', text: '100 Jumps' },
   { id: 'c7', text: '2-minute Plank' },
