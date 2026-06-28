@@ -2,10 +2,10 @@ import { Sun, Dumbbell, Coffee, BookOpen, Utensils, PenTool, Moon } from 'lucide
 import styles from './Routine.module.css';
 
 const routineItems = [
-  { time: '08:00 AM', title: 'Wake Up', icon: Sun },
+  { time: '07:00 AM', title: 'Wake Up', icon: Sun },
+  { time: '07:15 AM', title: 'Workout', icon: Dumbbell },
   { time: '08:30 AM', title: 'Breakfast + Office', icon: Coffee },
-  { time: '05:15 AM', title: 'Workout', icon: Dumbbell },
-  { time: '06:30 PM', title: 'IAS Classes - StudyIQ', icon: BookOpen },
+  { time: '05:00 PM', title: 'IAS Classes - StudyIQ', icon: BookOpen },
   { time: '09:00 PM', title: 'Dinner', icon: Utensils },
   { time: '10:00 PM', title: 'IAS Classes - StudyIQ', icon: PenTool },
   { time: '03:00 AM', title: 'Sleep', icon: Moon },
